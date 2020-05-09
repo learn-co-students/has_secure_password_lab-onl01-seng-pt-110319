@@ -1,0 +1,16 @@
+<h1>Login Page</h1>
+<table>
+<%= form_for @user, url: create_path do |f|%>
+<tr>
+  <td><%= f.label :name%></td>
+  <td><%= f.text_field :name%></td>
+</tr>
+<tr>
+  <td><%= f.label :password%></td>
+  <td><%= f.password_field :password%></td>
+</tr>
+<tr>
+  <td colspan="2"><%=f.submit value= 'Login'%></td>
+</tr>
+<%end%>
+</table>
